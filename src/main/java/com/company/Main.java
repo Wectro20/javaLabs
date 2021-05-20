@@ -24,5 +24,4 @@ public class Main {
         manager.sortByPrice(true).forEach(System.out::println);
         manager.sortBySize(true).forEach(System.out::println);
     }
-
 }

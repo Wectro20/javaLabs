@@ -1,40 +1,40 @@
 package com.company.item;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-@Setter
+import javax.validation.constraints.NotNull;
+
 @Getter
-@NoArgsConstructor
-@AllArgsConstructor
+@Setter
+
 
 public class Item {
+    private Integer id;
+    @NotNull(message = "Missing name")
     private String name;
+    @NotNull(message = "Missing brand")
     private String brand;
+    @NotNull(message = "Missing price")
     private float price;
+    @NotNull(message = "Missing origin country")
     private Country originCountry;
+    @NotNull(message = "Missing message")
     private Material material;
+    @NotNull(message = "Missing gender")
     private Gender gender;
+    @NotNull(message = "Missing size")
     private String size;
+    @NotNull(message = "Missing type of sport")
     private String typeOfSport;
 
-    @Override
-    public String toString() {
-        return itemToString() + "\n________________________\n";
-    }
-
-    public String itemToString() {
-        return "________________________"
-                + "\n|Name: " + name
-                + "|\n|brand: " + brand
-                + "|\n|Price: " + price
-                + "|\n|Country: " + originCountry
-                + "|\n|Material: " + material
-                + "|\n|Gender: " + gender
-                + "|\n|Size: " + size
-                + "|\n|Type of sport: " + typeOfSport;
+    public Item(String name, String brand, float price, Country originCountry, Material material, Gender gender, String size, String typeOfSport) {
+        this.name = name;
+        this.brand = brand;
+        this.price = price;
+        this.originCountry = originCountry;
+        this.material = material;
+        this.gender = gender;
+        this.size = size;
+        this.typeOfSport = typeOfSport;
     }
 }
-

@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 public class ItemManager {
     public List<Item> itemList;
 
-    public ItemManager(List<Item> items){
+    public ItemManager(List<Item> items) {
         itemList = items;
     }
 
@@ -35,7 +35,7 @@ public class ItemManager {
         return itemList;
     }
 
-    public List<Item> searchByTypeOfSport(String typeOfSport){
+    public List<Item> searchByTypeOfSport(String typeOfSport) {
         return itemList.stream().filter(item -> item.getTypeOfSport().equals(typeOfSport)).collect(Collectors.toList());
     }
 }
