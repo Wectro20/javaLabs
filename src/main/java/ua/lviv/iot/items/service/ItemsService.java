@@ -37,10 +37,6 @@ public class ItemsService {
         return itemsMap.get(id);
     }
 
-    public Map<Integer, Item> getItemsMap (){
-        return itemsMap;
-    }
-
     public void deleteById(Integer id){
         itemsMap.remove(id);
     }
