@@ -45,7 +45,7 @@ public class ItemController {
     }
 
     @DeleteMapping(path = "/{id}")
-    public void deleteBrushes(@PathVariable("id") Integer id) {
+    public void deleteItem(@PathVariable("id") Integer id) {
         itemsService.deleteById(id);
     }
 }
