@@ -11,7 +11,7 @@
         <relativePath/>
     </parent>
 
-    <groupId>org.arsiu</groupId>
+    <groupId>org.andrii</groupId>
     <artifactId>Lab9v1</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Lab9v1</name>
