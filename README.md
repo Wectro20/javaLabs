@@ -1,16 +1,16 @@
 # javaLabs
 
 # Task
-  Rewrite code from pyLab3 to java 
-  https://github.com/Wectro20/Python-labs/tree/Lab3
+The task is to create a REST service for one of the classes created in laboratory work 3, 
+which implements CRUD-operations (Get / Post / Put / Delete) 
+on the resource and the operation of returning all objects.
 
 # toRun
   ```
-  git clone https://github.com/Wectro20/javaLabs.git 
-  cd javaLabs
-  git checkout lab8
-  mvn compile
-  mvn site
-  cd target/site
-  run some of the html
+$ git clone https://github.com/Wectro20/javaLabs.git
+$ cd javaLabs
+$ git checkout lab9
+$ mvn compile
+$ mvn install
+$ java -jar target/Lab9v1-1.0-SNAPSHOT.jar
   ```
